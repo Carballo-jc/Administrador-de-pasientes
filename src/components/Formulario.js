@@ -109,7 +109,11 @@ const Formulario = ({crearCita}) => {
             value={sintomas}
           ></textarea>
 
-          <button data-testid='btn-submit' type="submit" className="u-full-width button-primary">
+          <button
+            data-testid="btn-submit"
+            type="submit"
+            className="u-full-width button_primary"
+          >
             Agregar Cita
           </button>
         </form>
@@ -118,7 +122,7 @@ const Formulario = ({crearCita}) => {
 }
 
 Formulario.propTypes = {
-  crearCita: PropTypes.func,
+  crearCita: PropTypes.func.isRequired,
 };
  
 export default Formulario;
